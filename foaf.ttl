@@ -1,11 +1,9 @@
+@prefix : <https://raw.githubusercontent.com/juxinxu1/foaf-profile/main/foaf.ttl#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix dc:   <http://purl.org/dc/elements/1.1/> .
-@prefix dct:  <http://purl.org/dc/terms/> .
-@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
-@prefix dbr:  <http://dbpedia.org/resource/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
 @prefix social: <https://users.dcc.uchile.cl/~ahogan/social.ttl#> .
-
-@base <http://example.org/juxinxu/foaf.ttl> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <> a foaf:PersonalProfileDocument ;
    dc:title "FOAF profile of Juxin Xu" ;
@@ -14,22 +12,25 @@
    foaf:primaryTopic <#jx> .
 
 <#jx> a foaf:Person ;
-   foaf:name "Juxin Xu" ;
-   foaf:age "23"^^xsd:integer ;
-   foaf:img <https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png> ;
-   foaf:homepage <https://github.com/juxinxu> ;
-   foaf:knows <http://users.dcc.uchile.cl/~ahogan/foaf.ttl#ah>,
-              <http://example.org/maria-gomez/foaf.ttl#mg>,
-              <http://example.org/tomas-vidal/foaf.ttl#tv>,
-              <http://example.org/camila-rios/foaf.ttl#cr> ;
-   foaf:interest dbr:Semantic_Web ,
-                 dbr:Artificial_intelligence ,
-                 dbr:Jazz_music ,
-                 dbr:Video_game_design ;
-   social:hasSpiritAnimal dbr:Red_panda ;
-   social:likesMovie dbr:Inception ,
-                     dbr:Spirited_Away ;
-   social:hasFavouritePlatonicSolid dbr:Dodecahedron ;
-   foaf:based_near dbr:Santiago ;
-   foaf:schoolHomepage <https://www.dcc.uchile.cl/> ;
-   foaf:myersBriggs "INTP" .
+    foaf:name "Juxin Xu" ;
+    foaf:givenName "Juxin" ;
+    foaf:familyName "Xu" ;
+    foaf:age "23"^^xsd:int ;
+    foaf:img foaf:img <https://raw.githubusercontent.com/juxinxu1/foaf-profile/main/avatar.jpg> ;
+    foaf:homepage <https://github.com/juxinxu1> ;
+    foaf:mbox <mailto:juxinxu1@example.com> ;
+    foaf:knows <http://users.dcc.uchile.cl/~ahogan/foaf.ttl#ah> ,
+               <https://raw.githubusercontent.com/maria123/foaf-profile/main/foaf.ttl#mz> ,
+               <https://raw.githubusercontent.com/pedrodev/foaf-profile/main/foaf.ttl#pg> ,
+               <https://raw.githubusercontent.com/sofiadev/foaf-profile/main/foaf.ttl#sd> ;
+    foaf:interest dbr:Semantic_Web ,
+                  dbr:Machine_learning ,
+                  dbr:Digital_art ;
+    social:hasSpiritAnimal dbr:Red_panda ;
+    social:likesMovie dbr:Inception ,
+                      dbr:Spirited_Away ;
+    social:hasFavouritePlatonicSolid dbr:Dodecahedron ;
+    foaf:myersBriggs "INTP" ;
+    foaf:based_near dbr:Santiago ;
+    foaf:topic_interest dbr:Artificial_intelligence ;
+    foaf:nick "juxinxu1" .
