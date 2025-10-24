@@ -1,0 +1,35 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc:   <http://purl.org/dc/elements/1.1/> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbr:  <http://dbpedia.org/resource/> .
+@prefix social: <https://users.dcc.uchile.cl/~ahogan/social.ttl#> .
+
+@base <http://example.org/juxinxu/foaf.ttl> .
+
+<> a foaf:PersonalProfileDocument ;
+   dc:title "FOAF profile of Juxin Xu" ;
+   dc:creator <#jx> ;
+   dc:date "2025-10-24"^^xsd:date ;
+   foaf:primaryTopic <#jx> .
+
+<#jx> a foaf:Person ;
+   foaf:name "Juxin Xu" ;
+   foaf:age "23"^^xsd:integer ;
+   foaf:img <https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png> ;
+   foaf:homepage <https://github.com/juxinxu> ;
+   foaf:knows <http://users.dcc.uchile.cl/~ahogan/foaf.ttl#ah>,
+              <http://example.org/maria-gomez/foaf.ttl#mg>,
+              <http://example.org/tomas-vidal/foaf.ttl#tv>,
+              <http://example.org/camila-rios/foaf.ttl#cr> ;
+   foaf:interest dbr:Semantic_Web ,
+                 dbr:Artificial_intelligence ,
+                 dbr:Jazz_music ,
+                 dbr:Video_game_design ;
+   social:hasSpiritAnimal dbr:Red_panda ;
+   social:likesMovie dbr:Inception ,
+                     dbr:Spirited_Away ;
+   social:hasFavouritePlatonicSolid dbr:Dodecahedron ;
+   foaf:based_near dbr:Santiago ;
+   foaf:schoolHomepage <https://www.dcc.uchile.cl/> ;
+   foaf:myersBriggs "INTP" .
