@@ -16,7 +16,7 @@
     foaf:givenName "Juxin" ;
     foaf:familyName "Xu" ;
     foaf:age "23"^^xsd:int ;
-    foaf:img foaf:img <https://raw.githubusercontent.com/juxinxu1/foaf-profile/main/avatar.jpg> ;
+    foaf:img <https://raw.githubusercontent.com/juxinxu1/foaf-profile/main/avatar.jpg> ;
     foaf:homepage <https://github.com/juxinxu1> ;
     foaf:mbox <mailto:juxinxu1@example.com> ;
     foaf:knows <http://users.dcc.uchile.cl/~ahogan/foaf.ttl#ah> ,
@@ -34,4 +34,5 @@
     foaf:based_near dbr:Santiago ;
     foaf:topic_interest dbr:Artificial_intelligence ;
     foaf:nick "juxinxu1" .
+
 
